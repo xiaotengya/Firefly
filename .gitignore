@@ -31,6 +31,8 @@ yarn.lock
 *.iml
 .claude
 
+.fqzlrimage
+
 # docs
 Firefly-docs/
 

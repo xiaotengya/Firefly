@@ -12,7 +12,7 @@ author: jyzft
 ---
 
 
-**Obsidian Git**
+## Obsidian Git 插件 说明
 
 |图标|功能名称|对应 Git 操作|作用说明|
 |:--|:--|:--|:--|
@@ -27,3 +27,6 @@ author: jyzft
 
 - 中间的 `vault backup: {{date}}` 是**提交信息模板**，`{{date}}` 会自动替换成当前日期 / 时间，你可以改成自己习惯的格式（比如 `backup: {{date:YYYY-MM-DD HH:mm}}`）。
 - 下方的 `Staged Changes` 是「已暂存的修改」，`Changes` 是「未暂存的修改」，文件后面的 `+M` 表示文件是**新增 / 修改状态**。
+
+
+## cf imagebed 插件说明
