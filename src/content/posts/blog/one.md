@@ -1,35 +1,29 @@
 ---
-title: "one"
+title: one
 published: 2026-05-03
 updated: 2026-05-03
 description: 这是第一篇文章
 image: ./cover.jpg
-tags: [one]
+tags:
+  - one
 category: one
 draft: false
 author: jyzft
 ---
 
-[免信用卡为 Cloudflare 添加付款方式 | 紫曦博客](https://blog.zixiwu.cn/65d0/ccc2)
 
-CC生成+CC检测：[https://checker.top/](https://checker.top/)
+**Obsidian Git**
 
-CC检测：[https://chkr.cc/](https://chkr.cc/)
+|图标|功能名称|对应 Git 操作|作用说明|
+|:--|:--|:--|:--|
+|⬆️（圆圈内上箭头）|提交并同步|`git commit + git push`|一键提交并推送，适合快速备份笔记|
+|✔️|提交变更|`git commit`|仅提交暂存区的修改，不推送到远程|
+|➕|暂存所有|`git add .`|把所有修改文件加入暂存区|
+|➖|取消暂存所有|`git reset HEAD`|把暂存区的文件恢复到未暂存状态|
+|📤（方框内上箭头）|推送|`git push`|把本地提交推送到远程仓库|
+|📥（方框内下箭头）|拉取|`git pull`|从远程仓库拉取最新内容|
+|📁|打开仓库目录|-|在文件管理器中打开 Obsidian 库的 Git 根目录|
+|🔄|刷新状态|`git status`|刷新界面，重新检测文件变更|
 
-信用卡生成：[[https://www.vccgenerator.org]]/
-
-一个信用卡号生成网站：https://namso-gen.com/
-
-一个卡BIN查询网站：https://bincheck.io/zh
-
-一个虚拟地址生成网站：[[https://www.meiguodizhi.com/]]
-
-一个可以通过cf支付网关验证的卡段，这里我为大家提供几个：
-
-601121255660xxxx
-
-546775142533xxxx
-
-622759531087xxxx
-
-479229938031xxxx
+- 中间的 `vault backup: {{date}}` 是**提交信息模板**，`{{date}}` 会自动替换成当前日期 / 时间，你可以改成自己习惯的格式（比如 `backup: {{date:YYYY-MM-DD HH:mm}}`）。
+- 下方的 `Staged Changes` 是「已暂存的修改」，`Changes` 是「未暂存的修改」，文件后面的 `+M` 表示文件是**新增 / 修改状态**。
