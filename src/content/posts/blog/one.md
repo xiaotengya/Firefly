@@ -12,6 +12,10 @@ author: jyzft
 ---
 
 
+####  **如何更优雅的用obsidian写博客，图床在obsidian怎么使用，以及个人心得**
+
+
+
 ## Obsidian Git 插件 说明
 
 |图标|功能名称|对应 Git 操作|作用说明|
@@ -30,4 +34,38 @@ author: jyzft
 
 
 ## cf imagebed 插件说明
-123
+
+
+## Q: 如何通过PicGo上传？
+
+- PicGo插件设置中搜索`web-uploader`，安装可自定义前缀的版本，如图：
+    
+    ![PicGo插件设置](https://cfbed.sanyue.de/images/qa/picgo-plugin.png)
+    
+- 打开`图床设置`->`自定义Web图床`->`Default`，然后按照下图方式配置，注意API地址和自定义图片URL前缀按照自己的域名进行修改。（**如果设置了`AUTH_CODE`，一定以`?authCode=your_authCode`的方式添加到API地址后面**）：
+    
+    ![图床设置](https://cfbed.sanyue.de/images/qa/picgo-config.png)
+    
+- 设置完成，确定即可使用PicGo上传到自建的图床。
+
+
+图床随机图的使用
+
+https://tu.fqzlr.com/random?type=img&dir=beijing&orientation=auto
+
+curl --location --request GET 'https://tu.fqzlr.com/random'
+
+curl --location --request GET 'https://tu.fqzlr.com/random?orientation=landscape'
+
+curl --location --request GET 'https://tu.fqzlr.com/random?dir=beijing&orientation=portrait'
+
+curl --location --request GET 'https://tu.fqzlr.com/random?type=img&orientation=landscape'
+
+<img src="https://tu.fqzlr.com/random?type=img&orientation=landscape" alt="随机背景">
+
+.hero {
+  background-image: url('tu.fqzlr.com/random?type=img&orientation=landscape');
+  background-size: cover;
+}
+
+https://your.domain/random?type=img&dir=mobile&orientation=portrait
